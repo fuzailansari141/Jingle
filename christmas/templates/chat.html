@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>ChatBot </title>
+  <link rel="stylesheet" href="">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+<head>
+    <title>ChatBot</title>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+   <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  
+</head>
+<body>
+
+
+  <div class="container">
+    <!-- Trigger the modal with a button -->
+    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+      <div class="modal-dialog">
+      
+        <!-- Modal content-->
+        <div class="modal-content" style="top: 161px; left:340px">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <div id="call" class="user-bar">
+              <div class="back">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="zmdi zmdi-arrow-left" style="color: red;"></i></button>
+            </div>
+            <div class="avatar">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuroDXInzIiexx0pbAkGZqZlpya50CAUyuZg&usqp=CAU" alt="Avatar">
+            </div>
+            <div class="name">
+              <span id="name"></span>
+            </div>
+            <!-- <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+            </div> -->
+          </div>
+          </div>
+          <div class="modal-body">
+
+
+            <div class="chat" >
+              <div class="chat-container" >
+                     
+                     <div class="conversation">
+                       <div class="conversation-container">
+                     <span id="ap">
+                     </span>
+               </div>
+                       <form id="form" class="conversation-compose">
+                      
+                         <input style=" border-bottom: 3px solid red; color: black; font-weight: bolder;" id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+                         
+                       <span id="speak"></span>
+                         <span class="send">
+                             <div class="circle">
+                               <i id="msend" class="zmdi zmdi-mail-send"></i>
+                             </div>
+                           </span>
+                       </form>
+                     </div>
+         </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+
+
+
+          </div>
+          
+        </div>
+        
+      </div>
+    </div>
+    
+  </div>
+  
+
+
+
+
+
+
+
+</body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

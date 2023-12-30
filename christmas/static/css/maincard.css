@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,500,700");
+::-webkit-scrollbar {
+  display: none;
+}
+.custom-btn {
+  background: black;
+  color: #fff;
+  display: block;
+  width: 100px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 25px;
+  padding: 10px;
+  transition: 0.3s;
+  font-weight: 500;
+  margin-top: 20px;
+}
+.custom-btn:hover {
+  text-decoration: none;
+  color: #fff;
+  opacity: 0.88;
+}
+
+.buttons .row .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.custom-btn i {
+  margin-left: 15px;
+}
+.center, #wrap {
+  position: absolute;
+  top: 1095%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+* {
+  box-sizing: border-box;
+  text-align: center;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background: #e91327;
+}
+
+#wrap {
+  width: 85%;
+}
+#wrap .card {
+  width: 32%;
+  height: 433px;
+  background: #fff;
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.3);
+  float: left;
+  position: relative;
+  border-radius: 5px;
+  padding: 0 10px;
+  margin-bottom: 70px;
+}
+#wrap .card:nth-child(2){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(5){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(8){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(11){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(14){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(17){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(20){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(23){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(26){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(29){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(32){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(20){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(23){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(26){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(29){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(32){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(35){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(38){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(41){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(44){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(47){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(50){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(53){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(56){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(59){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(62){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(65){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(68){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(71){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(74){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(77){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(80){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(83){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(86){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(89){
+  margin: 0 2%;
+}
+#wrap .card:nth-child(92){
+  margin: 0 2%;
+}
+
+#wrap .card:hover .thumb {
+  top: -25%;
+}
+#wrap .card .thumb {
+  width: 90%;
+  height: 150px;
+  background: #000;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: -10%;
+  transform: translateX(-50%);
+  z-index: 10;
+  transition: 0.3s cubic-bezier(0.67, -0.12, 0.45, 1.5);
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
+}
+
+#wrap .card .option {
+  width: 60%;
+  height: 30px;
+  margin: 90px auto 0 auto;
+}
+#wrap .card .option i {
+  font-size: 18px;
+  line-height: 30px;
+  padding: 0 5%;
+  color: #E63D3A;
+  opacity: 0.6;
+  position: relative;
+}
+#wrap .card .option i:hover {
+  cursor: pointer;
+}
+#wrap .card h3 {
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-top: 20px;
+  color: #ff0000;
+  opacity: 0.6;
+}
+#wrap .card hr {
+  width: 10%;
+  opacity: 0.5;
+  margin: 10px auto;
+}
+#wrap .card .price {
+  font-size: 14px;
+  font-weight: 700;
+  color: #4d4d4d;
+}
+#wrap .card .desc {
+  margin: 15px 0;
+  font-size: 13px;
+  line-height: 20px;
+  opacity: 0.8;
+}
+#wrap .card .add, #wrap .card .buy {
+  width: 48%;
+  height: 30px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  transition: 0.3s linear;
+}
+#wrap .card .add a, #wrap .card .buy a {
+  line-height: 30px;
+  font-size: 13px;
+  color: #fff;
+}
+#wrap .card .add {
+  float: left;
+  background: rgb(251, 33, 55);
+}
+#wrap .card .add:hover {
+  background: rgb(251, 33, 55);
+}
+#wrap .card .buy {
+  background: rgb(251, 33, 55);
+  width: 100%;
+}
+#wrap .card .buy:hover {
+  background: rgb(251, 33, 55);
+}
+
+@media screen and (max-width: 480px) {
+  #wrap {
+    top: 10%;
+    transform: translate(-50%, 0);
+  }
+  #wrap .card {
+    width: 100%;
+  }
+  #wrap .card:nth-child(2) {
+    margin: 50px 0;
+  }
+  #wrap .card:nth-child(3) {
+    margin-bottom: 20px;
+  }
+}
+button {
+  margin: 20px;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 800;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.btn-11 {
+  border: none;
+  background: rgb(17, 0, 255);
+  letter-spacing: 2px;
+    background: linear-gradient(0deg, rgb(251, 33, 55) 0%, rgb(218, 76, 234) 100%);
+    color: #fff;
+    overflow: hidden;
+}
+.btn-11:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.btn-11:before {
+    position: absolute;
+    content: '';
+    display: inline-block;
+    top: -180px;
+    left: 0;
+    width: 30px;
+    height: 100%;
+    background-color: #fff;
+    animation: shiny-btn1 3s ease-in-out infinite;
+}
+.btn-11:hover{
+  opacity: .7;
+}
+.btn-11:active{
+  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
+    inset -4px -4px 6px 0 rgba(255,255,255,.2),
+    inset 4px 4px 6px 0 rgba(0, 0, 0, .2);
+}
+
+
+@-webkit-keyframes shiny-btn1 {
+    0% { -webkit-transform: scale(0) rotate(45deg); opacity: 0; }
+    80% { -webkit-transform: scale(0) rotate(45deg); opacity: 0.5; }
+    81% { -webkit-transform: scale(4) rotate(45deg); opacity: 1; }
+    100% { -webkit-transform: scale(50) rotate(45deg); opacity: 0; }
+}

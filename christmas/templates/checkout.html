@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/checkout.css')}}">
+
+  <script>
+    document.getElementById("discount").innerHTML = "Have a nice day!";
+  </script>
+  
+</head>
+<body>
+ 
+
+<!-- partial:index.partial.html -->
+<form action="/submitform" method="POST" class="container">
+  <section class="product">
+    <div class="product__details">
+      <h1 class="product__details-heading">{{data[2]}}</h1>
+      <input type="hidden" name="venue" value="{{data[2]}}">
+      <span class="product__details-sub-heading" style="color: darkcyan; font-size: 20px;">{{venue_details[0][1]}}</span>
+
+      <div class="product__details-image-wrapper">
+        <img class="product__details-image" src="{{venue_details[0][6]}}" alt="">
+      </div>
+
+      <div class="product__details-basket">
+        <div class="product__details-basket-item">
+          <span class="product__details-basket-heading">No of People</span>
+          <div class="product__details-basket-quantity-wrapper">
+            <select class="product__details-basket-quantity" name="quantity" id="quantity" data-product-quantity required>
+              <option value="1" style="background-color: #00324e;">1</option>
+              <option value="2" style="background-color: #00324e;">2</option>
+              <option value="3" style="background-color: #00324e;">3</option>
+            </select>
+          </div>
+          <h1 style="color:red">{{data[0]}} Off</h1>
+          <input type="hidden" name="discount_value" value="{{data[0]}}">
+
+        </div>
+
+        <div class="product__details-basket-item">
+          <span class="product__details-basket-heading product__details-basket-heading--right">Price</span>
+          <span style="color: burlywood;" class="product__details-basket-price" data-product-price>₹{{venue_details[0][5]}}.0</span>
+          <span class="product__details-basket-price" id="discount" data-product-discount>-{{discount_value}}</span>
+          <span style="color: #fff; background-color: green; margin-top: 6px;" class="product__details-basket-price" data-product-total>₹{{total}}</span>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="card-details" action="" data-form>
+      <fieldset class="card-details__fieldset">
+        <span class="card-details__heading" aria-hidden="true">Email:-  {{data[1]}}</span>
+        <div class="card-details__holder">
+          <label class="card-details__holder-label" for="cardHolderName"></label>
+          <input class="card-details__holder-input" type="hidden" name="email" value="{{data[1]}}" id="cardHolderName" data-input>
+        </div>
+      </fieldset>
+
+      <fieldset class="card-details__fieldset">
+        <span class="card-details__heading" aria-hidden="true">Phone No</span>
+        <div class="card-details__holder">
+          <label class="card-details__holder-label" for="cardHolderName">Phone No</label>
+          <input class="card-details__holder-input" type="number" name="phone" maxlength="10" id="cardHolderName" data-input required>
+        </div>
+      </fieldset>
+
+      <fieldset class="card-details__fieldset">
+        <span class="card-details__heading">Card Type</span>
+
+        <div class="card-details__cards" data-card-types>
+          <div class="card-details__cards-item">
+            <input class="card-details__card-input" type="radio" name="card" value="visa" id="visa" data-card-type="visa" checked>
+            <label class="card-details__card-label" for="visa">Visa</label>
+            <img class="card-details__cards-image" src="https://svgshare.com/i/7h2.svg" alt="Visa Card" aria-hidden="true">
+          </div>
+
+          <div class="card-details__cards-item">
+            <input class="card-details__card-input" type="radio" name="card"  value="MasterCard"  id="mastercard" data-card-type="mastercard">
+            <label class="card-details__card-label" for="mastercard">MasterCard</label>
+            <img class="card-details__cards-image" src="https://svgshare.com/i/7fu.svg" alt="MasterCard" aria-hidden="true">
+          </div>
+
+          <div class="card-details__cards-item">
+            <input class="card-details__card-input" type="radio" name="card"  value="Discover" id="discover" data-card-type="discover">
+            <label class="card-details__card-label" for="discover">Discover</label>
+            <img class="card-details__cards-image" src="https://svgshare.com/i/7hP.svg" alt="Discover Card" aria-hidden="true">
+          </div>
+
+          <div class="card-details__cards-item">
+            <input class="card-details__card-input" type="radio" name="card"  value="Amercican Express"  id="express" data-card-type="express">
+            <label class="card-details__card-label" for="express">American Express</label>
+            <img class="card-details__cards-image" src="https://svgshare.com/i/7gD.svg" alt="Amercican Express Card" aria-hidden="true">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="card-details__fieldset">
+        <span class="card-details__heading">Card Number</span>
+
+        <div class="card-details__number">
+          <div class="card-details__number-field">
+            <label for="cardNumberFirstFour" class="card-details__number-label">First Four Digits</label>
+            <input class="card-details__number-input" type="text" maxlength="4" name="card1" value="0000" id="cardNumberFirstFour" data-input required>
+          </div>
+
+          <div class="card-details__number-field">
+            <label for="cardNumberSecondFour" class="card-details__number-label">Second Four Digits</label>
+            <input class="card-details__number-input" type="text" maxlength="4" name="card2" value="0000" id="cardNumberSecondFour" data-input required>
+          </div>
+
+          <div class="card-details__number-field">
+            <label for="cardNumberThirdFour" class="card-details__number-label">Third Four Digits</label>
+            <input class="card-details__number-input" type="text" maxlength="4" name="card3" value="0000" id="cardNumberThirdFour" data-input required>
+          </div>
+
+          <div class="card-details__number-field">
+            <label for="cardNumberFirstFour" class="card-details__number-label">Last Four Digits</label>
+            <input class="card-details__number-input" type="text" maxlength="4" name="card4" value="0000" id="cardNumberLastFour" data-input required>
+          </div>
+
+          <div class="card-details__number-card">
+            <img class="card-details__number-card-image" src="https://svgshare.com/i/7h2.svg" alt="Visa Card" data-card-image>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="card-details__fieldset">
+        <span class="card-details__heading" aria-hidden="true">Card Holder Name</span>
+        <div class="card-details__holder">
+          <label class="card-details__holder-label" for="cardHolderName">Card Holder Name</label>
+          <input class="card-details__holder-input" type="text" name="name" id="cardHolderName" data-input required>
+        </div>
+      </fieldset>
+
+      <fieldset class="card-details__fieldset">
+       
+
+        <div class="card-details__security">
+          <span class="card-details__heading" aria-hidden="true">CVV</span>
+          <div class="card-details__details__security-code">
+            <label class="card-details__security-code-label" for="expirationDate">CVV</label>
+            <input class="card-details__security-code-input" name="cvv" type="text" maxlength="3" value="000" id="expirationDate" data-input required>
+          </div>
+        </div>
+      </fieldset>
+
+      <button class="card-details__submit" type="submit" data-submit-button>BOOK</button>
+    </div>
+  </section>
+  
+</form>
+<!-- partial -->
+<script>
+  function ValidationModule({ form, inputs, submit }) {
+  const state = {
+    form,
+    inputs,
+    submit
+  };
+  
+  function focus({ target }) {
+    if (target.defaultValue === target.value) {
+      target.value = '';
+    }
+  }
+  
+  function blur({ target }) {
+    const defaultClassName = target.className.split(' ')[0];
+    
+    if (target.value === '') {
+      target.value = target.defaultValue;
+      target.className = defaultClassName;
+      return;
+    }
+    
+    target.className = `${defaultClassName} ${defaultClassName}--valid`;
+  }
+  
+  function delegateEvent(event) {
+    if (event.target.nodeName !== 'INPUT') {
+      return;
+    }
+    
+    if (event.type === 'focus') {
+      return focus(event);
+    }
+    
+    if (event.type === 'blur') {
+      return blur(event);
+    }
+  }
+
+  function bindEvents() {
+    form.addEventListener('focus', delegateEvent, true);
+    form.addEventListener('blur', delegateEvent, true);
+  }
+
+  return {
+    bindEvents
+  }
+}
+
+
+
+function checkoutForm() {
+  const form = document.querySelector('[data-form]');
+  const quantity = document.querySelector('[data-product-quantity]');
+  const cardTypes = form.querySelector('[data-card-types]');
+  const data = {
+    form,
+    inputs: form.querySelectorAll('[data-input]'),
+    submit: form.querySelector('[data-submit]')
+  };
+  
+  function togglePriceChange({ target }) {
+    const value = parseInt(target.value, 10);
+    const initialPrice = {{venue_details[0][5]}};
+    const discount = {{discount}};
+
+    const price = document.querySelector('[data-product-price]');
+    const newPrice = initialPrice * value;
+    price.textContent = `₹${newPrice.toFixed(1)}`;
+    
+    const disc = document.querySelector('[data-product-discount]');
+    const damt = ((initialPrice * discount)/100)* value;
+    disc.textContent = `-${damt.toFixed(1)}`;
+
+    const overall = document.querySelector('[data-product-total]');
+    const total = newPrice - damt;
+    overall.textContent = `₹${total.toFixed(1)}`;
+  }
+
+  function toggleCardType({ target }) {
+    const cardImage = form.querySelector('[data-card-image]');
+    const cardTypeValue = target.getAttribute('data-card-type');
+    const cardPath = 'https://svgshare.com/i/';
+    const cardTypeData = {
+      visa: { src: `${cardPath}7h2.svg`, alt: 'Visa Card' },
+      mastercard: { src: `${cardPath}7fu.svg`, alt: 'MasterCard' },
+      discover: { src: `${cardPath}7hP.svg`, alt: 'Discover Card' },
+      express: { src: `${cardPath}7gD.svg`, alt: 'American Express Card' }
+    }
+    
+    if (cardTypeData.hasOwnProperty(cardTypeValue)) {
+      const data = Object.getOwnPropertyDescriptor(cardTypeData, cardTypeValue);
+      
+      cardImage.src = data.value.src;
+      cardImage.alt = data.value.alt;
+    }
+  }
+
+  function init() {
+    const validation = new ValidationModule(data);
+    
+    quantity.addEventListener('change', togglePriceChange);
+    cardTypes.addEventListener('click', toggleCardType);
+    validation.bindEvents();
+  }
+
+  init();
+}
+
+checkoutForm();
+</script>
+</body>
+</html>

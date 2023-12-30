@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Spin</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/spinmain.css')}}">
+
+  <script type="text/javascript">
+    $("button").click(function() {
+        var fired_button = $("button").val();
+        alert(fired_button);
+    });
+
+    function button_onclick(element) {
+    element.style.visibility = 'hidden';
+}
+    </script>
+
+<style> 
+</style>
+<script>
+  const btn = document.getElementById('btn');
+
+btn.addEventListener('click', () => {
+  // 👇️ hide button
+  btn.style.display = 'none';
+
+  // 👇️ show div
+  const box = document.getElementById('box');
+  box.style.display = 'block';
+});
+</script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<div class="page">
+
+  <header class="header">
+    <center>
+      <h1>SPIN TO CLAIM!</h1>
+  
+  
+  </center>
+    <input type="hidden" class="info__open-btn">
+      
+    <nav class="menu">
+      <input type="hidden" class="menu__collapse-btn IconButton">
+     
+        
+    </nav>
+  </header>
+  <main class="main" >
+    
+{% if mail[0][2]=="no" or insert=="not" %}
+  
+  <div class="game">
+    <div class="flip-card">
+    <div class="interactive-area flip-card__inner">
+  <div id="wheel" class="wheel-area flip-card__front">
+      <div id="spin" class="spin-area">
+         <div class="slice__container" data-order="1">
+      <div class="text"><span>50%</span>
+       </div>
+    </div>
+        <div class="slice__container" data-order="2">
+      <div class="text"><span>10%</span>
+       </div>
+    </div>
+        <div class="slice__container" data-order="3">
+      <div class="text"><span>30%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="4">
+      <div class="text"><span>5%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="5">
+      <div class="text"><span>60%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="6">
+      <div class="text"><span>70%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="7">
+      <div class="text"><span>80%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="8">
+      <div class="text"><span>10%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="9">
+      <div class="text"><span>100%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="10">
+      <div class="text"><span>50%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="11">
+      <div class="text"><span>0%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="12">
+      <div class="text"><span>45%</span>
+       </div>
+    </div>
+      </div>
+    <div class="shadow"></div>
+    <div class="highlight"></div>
+    <div id="btn--wheel" onclick="button_onclick(this)" class="wheel__btn">
+    </div>
+    <div id="speech-bubble" class="box tooltip">
+      <!-- <div class="tooltip__heading"> -->
+        <input type="hidden" class="close-button IconButton">
+      <!-- </div> -->
+      <!-- <span>Click the button to start spinning</span> -->
+    </div>
+    <div class="wheel__indicator"></div>
+  </div>
+      <div class="flip-card__back">
+        <div class="timer">
+  <div class="pie spinner"></div>
+  <div class="pie filler"></div>
+  <div class="mask"></div>
+</div>
+      </div>
+    </div>
+    </div>
+
+
+    <center>
+    <div class="guidance hidden" style="height: 200px; width: 350px; background-color: white; border-radius: 20px; margin-left: -25px;margin-bottom: 95px; padding: 10px; background-image: url(https://thumbs.gfycat.com/UntidySickHairstreak-max-1mb.gif);" >
+
+    <h2 style="padding-top: 20px; color:darkslategray">Click the below button to avail the offer</h2>
+      <!-- <button onclick="alert(this.innerText)"><h4 class="slice-name"></h4></button> -->
+      <button style="background-color: red; color: white; width: 150px; height: 50px; border-radius: 20px;" onclick="window.location = '/checkoutform?email={{mail[0][1]}}&venue={{mail[0][4]}}&discount='+this.innerText"><span class="slice-name"></span></button>
+      <input type="hidden" class="button btn__start">
+      </div>
+    </center>
+
+  </div>
+<!--   <div class="instruction">
+    <div class="cta">
+    <h3>Can't decide? Spin that wheel</h3>
+    </div>
+  </div> -->
+</main> 
+{% endif %}  
+
+
+
+{% if Venue!=mail[0][4] and other=="yes" %}
+  
+  <div class="game">
+    <div class="flip-card">
+    <div class="interactive-area flip-card__inner">
+  <div id="wheel" class="wheel-area flip-card__front">
+      <div id="spin" class="spin-area">
+         <div class="slice__container" data-order="1">
+      <div class="text"><span>50%</span>
+       </div>
+    </div>
+        <div class="slice__container" data-order="2">
+      <div class="text"><span>10%</span>
+       </div>
+    </div>
+        <div class="slice__container" data-order="3">
+      <div class="text"><span>30%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="4">
+      <div class="text"><span>5%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="5">
+      <div class="text"><span>60%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="6">
+      <div class="text"><span>70%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="7">
+      <div class="text"><span>80%</span>
+       </div>
+    </div>
+      <div class="slice__container" data-order="8">
+      <div class="text"><span>10%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="9">
+      <div class="text"><span>100%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="10">
+      <div class="text"><span>50%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="11">
+      <div class="text"><span>0%</span>
+       </div>
+    </div>
+    <div class="slice__container" data-order="12">
+      <div class="text"><span>45%</span>
+       </div>
+    </div>
+      </div>
+    <div class="shadow"></div>
+    <div class="highlight"></div>
+    <div id="btn--wheel" onclick="button_onclick(this)" class="wheel__btn">
+    </div>
+    <div id="speech-bubble" class="box tooltip">
+      <!-- <div class="tooltip__heading"> -->
+        <input type="hidden" class="close-button IconButton">
+      <!-- </div> -->
+      <!-- <span>Click the button to start spinning</span> -->
+    </div>
+    <div class="wheel__indicator"></div>
+  </div>
+      <div class="flip-card__back">
+        <div class="timer">
+  <div class="pie spinner"></div>
+  <div class="pie filler"></div>
+  <div class="mask"></div>
+</div>
+      </div>
+    </div>
+    </div>
+
+
+    <center>
+    <div class="guidance hidden" style="height: 200px; width: 350px; background-color: white; border-radius: 20px; margin-left: -25px;margin-bottom: 95px; padding: 10px; background-image: url(https://thumbs.gfycat.com/UntidySickHairstreak-max-1mb.gif);">
+
+    <h2 style="padding-top: 20px; color:darkslategray">Click the below button to avail the offer</h2>
+      <!-- <button onclick="alert(this.innerText)"><h4 class="slice-name"></h4></button> -->
+      <button style="background-color: red; color: white; width: 150px; height: 50px; border-radius: 20px;" onclick="window.location = '/checkoutform?email={{mail[0][1]}}&venue={{mail[0][4]}}&discount='+this.innerText"><span class="slice-name"></span></button>
+      <input type="hidden" class="button btn__start">
+      </div>
+    </center>
+
+  </div>
+<!--   <div class="instruction">
+    <div class="cta">
+    <h3>Can't decide? Spin that wheel</h3>
+    </div>
+  </div> -->
+</main> 
+{% endif %}  
+
+
+
+{% if mail[0][2]=="yes" and Venue==mail[0][4] %}
+  <div  style="height: 300px; width: 350px; background-color: white; border-radius: 20px; margin-left: 195px;margin-top: 135px; padding: 30px; background-image: url(https://thumbs.gfycat.com/UntidySickHairstreak-max-1mb.gif); ">
+    <center>
+      <h3 style="background-color: bisque;">You have already won an offer</h3>
+    <h2 style="padding-top: 20px; color:darkslategray">Click the below button to avail the offer</h2>
+      <!-- <button onclick="alert(this.innerText)"><h4 class="slice-name"></h4></button> -->
+      <button style="background-color: red; color: white; width: 150px; height: 50px; border-radius: 20px;" onclick="window.location = '/checkoutform?email={{mail[0][1]}}&venue={{mail[0][4]}}&discount='+this.innerText"><span class="slice-name">{{mail[0][3]}}</span></button>
+      <h1 style="margin-top:18px; color: red;  font-size: 10px;"><b>Off</b></h1>  
+    </center>
+      <input type="hidden" class="button btn__start">
+      </div>
+{% endif %}
+
+</main> 
+</div>
+<!-- partial -->
+<script src="{{ url_for('static', filename='js/spinmain.js')}}"></script>
+
+</body>
+</html>

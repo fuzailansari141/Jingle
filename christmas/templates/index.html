@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en"><!-- Basic -->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Site Metas -->
+	<title>Christmas</title>
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Site Icons -->
+	<link rel="shortcut icon" href="#" type="image/x-icon" />
+	<link rel="apple-touch-icon" href="#" />
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+	<!-- Pogo Slider CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/pogo-slider.min.css')}}">
+	<!-- Site CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+	<!-- Responsive CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/responsive.css')}}">
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/custom.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/chatstyle.css')}}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.1.2/css/material-design-iconic-font.min.css">
+	   <script src='https://code.responsivevoice.org/responsivevoice.js'></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	
+
+
+
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	<style>
+		/* customizable snowflake styling */
+	</style>
+
+</head>
+
+<body id="home" data-spy="scroll" data-target="#navbar-wd" data-offset="98">
+
+	<div class="snowflakes" aria-hidden="true">
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+		<div class="snowflake">
+			❆
+		</div>
+		<div class="snowflake">
+			❅
+		</div>
+
+	</div>
+
+
+	<!-- LOADER -->
+	<div id="preloader">
+		<div class="loader">
+			<div class="box"></div>
+			<div class="box"></div>
+		</div>
+	</div><!-- end loader -->
+	<!-- END LOADER -->
+	<!-- Start header -->
+	<header class="top-header">
+		<nav class="navbar header-nav navbar-expand-lg" style="box-shadow: 0px 7px #ff0000;
+		border-radius: 20px;">
+			<div class="container">
+				<a class="navbar-brand" href="index.html"><img src="{{url_for('static', filename='images/ingle.png')}}"
+						alt="image" width="260" height="65" style="left: 10px"></a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-wd"
+					aria-controls="navbar-wd" aria-expanded="false" aria-label="Toggle navigation">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbar-wd">
+					<ul class="navbar-nav">
+						<li><a class="nav-link active" href="#home">Home</a></li>
+						<li><a class="nav-link" href="#wish">Best Wishes</a></li>
+						<li><a class="nav-link" href="#venues">Venues</a></li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+						<li><a class="nav-link" href="/chat"  data-toggle="modal" data-target="#myModal">Chat</a></li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<!-- End header -->
+	<br>
+	<!-- Start Banner -->
+	<div class="ulockd-home-slider">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="pogoSlider" id="js-main-slider" style="border-radius: 20px; margin-top: 65px; margin-right: 20px; margin-left: 20px;">
+					<div class="pogoSlider-slide" style="background-image:url(static/images/2.png);"></div>
+					<div class="pogoSlider-slide" style="background-image:url(static/images/3.png);"></div>
+					<div class="pogoSlider-slide" style="background-image:url(static/images/4.png);"></div>
+					
+				</div><!-- .pogoSlider -->
+			</div>
+		</div>
+		<!-- <a href="/chat"><i class="fa fa-comments" style="right: 100%;"></i></a> -->
+
+	</div>
+	<!-- End Banner -->
+
+	<!-- wish -->
+	<div id="wish" class="about-box" style="padding-bottom: 0;">
+		<div class="about-a1">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="title-box">
+							<h2>Best Wishes</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+
+							<div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+								<div class="full">
+									<img class="img-responsive" src="{{url_for('static', filename='images/w1.png')}}"
+										alt="#" />
+								</div>
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2><img style="width: 60px;" src="{{url_for('static', filename='images/head_s.png')}}"
+										alt="#" /> Christmas Celebration </h2>
+								<p>Christmas is a highly awaited and widely celebrated day in all over the world.
+									There are lots of things to plan and prepare for these grand celebrations.
+									Not only in the houses, but most of the schools, corporates, and other organizations
+									celebrate this festival.
+									But, when you are not aware of how to manage small or large events especially for
+									these big days, you require professional support.
+									Jingle is the one for you.</p>
+								<p> We are widely popular in our industry as a Christmas event planner.
+									We can easily make your Christmas day most memorable one. With our best planning,
+									organization, and preparation strategies,
+									we will help you to make your event in the way you want it to be.</p>
+								<!-- <a href="/christmas" class="hvr-radial-out button-theme">Read More</a> -->
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="about-a1" style="background:#f7f7f7;margin-top: 50px;padding-top: 75px;padding-bottom: 50px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12 col-sm-12">
+						<div class="row align-items-center about-main-info">
+
+							<div class="col-lg-6 col-md-6 col-sm-12">
+								<h2><img style="width: 60px;" src="{{url_for('static', filename='images/head_s.png')}}"
+										alt="#" /> New Year Celebration </h2>
+								<p>New years are the days that require huge celebrations.
+									These are the moments when we say goodbye to the previous year
+									and welcome a new one with new hopes and goals. People love to
+									enjoy the new year days especially new years evenings with their loved ones.
+									But when it comes to organizing special events for these crucial celebrations,
+									the requirements for professional support increases. It is necessary to make
+									everything attractive and good looking. If you are also looking for these services
+									then Jingle is the best options for you. </p>
+								<p>We are here with our best new year event planning services.
+									These services will help you to make your new year celebration the most memorable
+									one.
+									We will help you with our expert support if you are not aware of how to organize new
+									year party.
+									Our work will help you to enjoy those best moment till their maximum.</p>
+								<!-- <a href="/new" class="hvr-radial-out button-theme">Read More</a> -->
+							</div>
+
+							<div class="col-lg-6 col-md-6 col-sm-12 text_align_center">
+								<div class="full">
+									<img class="img-responsive" src="{{url_for('static', filename='images/w2.png')}}"
+										alt="#" />
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- wish us -->
+
+	<!-- best deals -->
+	<div id="venues" class="services-box main-timeline-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Venues</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				{% for i in data %}
+				<div class="col-lg-6 col-sm-6">
+					<figure class="effect-service" style="border-radius: 25px; box-shadow: 0px 6px #ff0000;">
+						<img src="{{i[6]}}" height="350" style="border-radius: 25px;" alt="" />
+						<figcaption>
+							<h2><a href="/viewvenue?Venue={{i[2]}}" style="color: #fff;">{{i[2]}}</a></h2>
+							<a href="#">View more</a>
+						</figcaption>
+					</figure>
+				</div>
+				{% endfor %}
+
+			</div>
+			<center><a href="/card" class="hvr-radial-out button-theme" style="padding: 10px 25px;
+				background: #e91327;
+				color: #ffffff;
+				font-weight: 300;
+				font-size: 15px;
+				border-radius: 0 15px;
+				margin-top: 10px;">View All</a></center>
+
+		</div>
+	</div>
+	<!-- best deals -->
+
+	<!-- donate -->
+	<div id="Gallery" class="gallery-box" style="background: #f7f7f7;">
+		<div class="container" style="background-color: #fff;
+		border-radius: 20px;
+		padding: 34px;
+		box-shadow: 0px 10px #ff0000;">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Gallery</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<ul class="popup-gallery clearfix" >
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/d1.png')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/d1.png')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/party1.jpg')}}" height="300">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/party1.jpg')}}"
+								height="300" alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/d3.png')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/d3.png')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/party2.jpg')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/party2.jpg')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/d1.png')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/d1.png')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/part3.jpg')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/part3.jpg')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/d3.png')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/d3.png')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/party4.jpg')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/party4.jpg')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+					<li style="border-radius: 25px;">
+						<a href="{{url_for('static', filename='images/d1.png')}}">
+							<img style="border-radius: 25px;" class="img-fluid" src="{{url_for('static', filename='images/d1.png')}}"
+								alt="single image">
+							<span class="overlay"><i class="fa fa-picture-o" aria-hidden="true"></i></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!-- end donate -->
+
+	<!-- testimonial -->
+
+
+
+	<!-- contact -->
+	<div id="contact" class="contact-box" style="background: #f7f7f7;">
+		<div class="container" style="background-color: #fff;
+		border-radius: 20px;
+		padding: 34px;
+		box-shadow: 0px 10px #ff0000;">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="title-box">
+						<h2>Contact us</h2>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+
+				<div class="col-lg-7 col-sm-7 col-xs-12">
+					<div class="contact-block">
+						<form action="/contact" method="post" >
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" class="form-control" id="name" name="name"
+											placeholder="Your Name" required data-error="Please enter your name">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<input type="text" placeholder="Your Email" id="email" class="form-control"
+											name="email" required data-error="Please enter your email">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<input type="text" placeholder="Your number" id="number" class="form-control"
+											name="phone" required data-error="Please enter your number">
+										<div class="help-block with-errors"></div>
+									</div>
+								</div>
+								<div class="col-md-12">
+									<div class="form-group">
+										<textarea class="form-control" id="message" name="message" placeholder="Your Message" rows="8"
+											data-error="Write your message" required></textarea>
+										<div class="help-block with-errors"></div>
+									</div>
+									<div class="submit-button text-center">
+										<input class="btn btn-common" id="submit" type="submit" name="submit" value="submit">
+										<div id="msgSubmit" class="h3 text-center hidden"></div>
+										<div class="clearfix"></div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+
+
+				<div class="col-lg-5 col-sm-5 col-xs-12">
+					<div class="left-contact">
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-map-marker" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Address</h4>
+								<p>Santa House 07, Jingle City</p>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-envelope" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Email</h4>
+								<a href="#">jinglesanta@gmail.com</a><br>
+								<a href="#">santa01@jingle.com</a>
+							</div>
+						</div>
+						<div class="media cont-line">
+							<div class="media-left icon-b">
+								<i class="fa fa-volume-control-phone" aria-hidden="true"></i>
+							</div>
+							<div class="media-body dit-right">
+								<h4>Phone Number</h4>
+								<a href="#">71119 01324</a><br>
+								<a href="#">42310 91117</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+	</div>
+	<!-- end contact -->
+
+
+
+	<!-- Start Footer -->
+	<footer class="footer-box">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="footer-company-name">All Rights Reserved. &copy; 2022 <a href="#home">Jingle</a>
+						Design By : <a href="https://html.design/">Jingle Group</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<!-- End Footer -->
+
+	<a href="/chat" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal" style="position: fixed;
+	bottom: 20px;
+	right: 20px;
+	background: red;
+	width: 50px;
+	height: 50px;  
+	border-radius: 50%;
+	color: white;
+	padding: 31px;
+	cursor: pointer;
+	z-index: 2;
+	box-shadow: 0px 3px 16px 0px rgba(255, 1, 1, 0.6), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  "><i style="font-size: 45px; margin: -22px;" class="fa fa-comments"></i></a>
+	
+
+
+
+	<div class="container">
+		<!-- Trigger the modal with a button -->
+	  
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" role="dialog">
+		  <div class="modal-dialog">
+		  
+			<!-- Modal content-->
+			<div class="modal-content" style="top: 161px; left:420px">
+			  <div class="modal-header">
+				<div id="call" class="user-bar">
+				  <div class="back">
+					<button type="button" class="btn btn-default" data-dismiss="modal"><i class="zmdi zmdi-arrow-left" style="color: red;"></i></button>
+				</div>
+				<div class="avatar" style="padding-left: 8px; padding-top: 8px;">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuroDXInzIiexx0pbAkGZqZlpya50CAUyuZg&usqp=CAU" alt="Avatar">
+				</div>
+				<div class="name" style="padding-top: 18px; padding-left: 8px;">
+				  <h1 id="name">Jingle ChatBot</h1>
+				</div>
+				<!-- <div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">X</button>
+				</div> -->
+			  </div>
+			  </div>
+			  <div class="modal-body">
+	
+	
+				<div class="chat" >
+				  <div class="chat-container" >
+						 
+						 <div class="conversation">
+						   <div class="conversation-container">
+						 <span id="ap">
+						 </span>
+				   </div>
+						   <form id="form" class="conversation-compose">
+						  
+							 <input style=" border-bottom: 3px solid red; color: black; font-weight: bolder;" id="val" class="input-msg" name="input" placeholder="Type a message" autocomplete="off" autofocus></input>
+							 
+						   <span id="speak"></span>
+							 <span class="send">
+								 <div class="circle">
+								   <i id="msend" class="zmdi zmdi-mail-send"></i>
+								 </div>
+							   </span>
+						   </form>
+						 </div>
+			 </div>
+					 </div>
+				   </div>
+				 </div>
+			   </div>
+			 </div>
+	
+	
+	
+			  </div>
+			  
+			</div>
+			
+		  </div>
+		</div>
+		
+	  </div>
+	  
+
+
+{% if contact=="submitted" %}
+<script>
+	alert("Contact Sent , we will get you back ASAP");
+</script>
+{% endif %}
+
+
+	<!-- ALL JS FILES -->
+	<script src="{{url_for('static', filename='js/jquery.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+	<!-- ALL PLUGINS -->
+	<script src="{{url_for('static', filename='js/jquery.magnific-popup.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/jquery.pogo-slider.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/slider-index.js')}}"></script>
+	<script src="{{url_for('static', filename='js/smoothscroll.jss')}}"></script>
+	<script src="{{url_for('static', filename='js/form-validator.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/contact-form-script.js')}}"></script>
+	<script src="{{url_for('static', filename='js/isotope.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/images-loded.min.js')}}"></script>
+	<script src="{{url_for('static', filename='js/custom.js')}}"></script>
+
+	<script src="{{url_for('static', filename='js/chatscript.js')}}"></script>
+
+</body>
+
+</html>

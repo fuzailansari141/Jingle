@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Venues</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href=".{{ url_for('static', filename='css/maincard.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body
+  style="background-image: url(https://freerangestock.com/sample/140362/red-and-white-christmas-background--with-copyspace--merry-chri.jpg); background-size: cover; background-repeat: no-repeat; background-attachment: fixed;">
+  <div class="buttons">
+    <a href="/">
+      <!-- <button style="height: 35px; width: 70px; border-radius: 20px; font-size: 15px; border-color: red; background-color: red; right: 10px;"><i
+          style="color: aliceblue;" class="fa fa-angle-left"> Back</i></button> -->
+          <button class="custom-btn btn-11"><i style="color: aliceblue;" class="fa fa-angle-left"> BACK</i><div class="dot"></div></button>
+
+        </a>
+    <div class="row">
+      <div>
+        <a class="newLink purple" href="#" style="font-family: Algerian;color: rgb(251, 6, 6);transition: color 0.3s ease-out;    font-size: 50px;
+        ">MAIN VENUES POWERED BY <img src="{{url_for('static', filename='images/ingle.png')}}" height="80" width="320" style="margin-top: -20px;"></a>
+   </div>
+      <div
+        style="width:11%; height:0%; background-color:transparent; padding: 10px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;">
+
+        <div class="col">
+          <center>
+           
+            <!-- <form action="/card" method="get">
+              <label for="state"> Select State </label>
+              <input list="states" name="state" id="state">
+              <datalist id='states'>
+                <option value="All">
+                <option value="Maharashtra"> 
+                <option value="Gujrat"> 
+                <option value="Bengluru">
+                <option value="Goa">
+                <option value="Tamil Nadu"> 
+                <option value="West Bengal"> 
+                <option value="Rajasthan"> 
+                <option value="Uttar Pradesh">
+                <option value="Haryana">
+                <option value="New Delhi">
+                <option value="Punjab">
+                <option value="Assam">
+                <option value="Hyderabad">
+              </datalist>
+             <input type="submit">
+          </form> -->
+            <!-- <a href="/" class="custom-btn"><i style="color: aliceblue;" class="fa fa-angle-left"></i></a> -->
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- partial:index.partial.html -->
+  <div id="wrap">
+    {% for i in i %}
+    <div class="card">
+      <div class="thumb" id="one" style="background-image: url({{i[6]}});">
+      </div><br><br><br><br><br><br><br>
+      <!-- <div class="option"><i class="material-icons">favorite</i><i class="material-icons">edit</i><i class="material-icons">close</i></div> -->
+      <h3>{{i[0]}}</h3><br>
+      <h4>{{i[4]}}</h4>
+      <hr />
+      <p class="price" style="font-size: medium;"> ₹ {{i[5]}}</p>
+      <hr />
+      <p class="desc" style="font-weight: bolder;font-size: large;">{{i[3]}}</p>
+      <p class="desc">{{i[2]}}</p><br><br>
+      <div class="buy"> <a href="/viewvenue?Venue={{i[2]}}">View More</a></div>
+    </div>
+    {% endfor %}
+  </div>
+  <!-- partial -->
+  <script>
+    var snow_fall_rate = 5 //decrease for faster fall speed
+function snow() {  
+  var b = document.createElement('div')
+  var size = (Math.random()*10) + 5
+  b.className = 'flake'
+  b.style.width = size + 'px'
+  b.style.height = size + 'px'
+  b.style.position = 'fixed'
+  b.style.zIndex = '9999'
+  b.style.left = Math.random()*window.innerWidth + 'px'
+  b.style.top = '-20px'
+  b.style.borderRadius = '50%'
+  b.style.background = 'white'  
+  b.style.opacity = '.5'  
+  b.style.filter = Math.random() < .5 ? 'blur(3px)' : 'blur(1px)'
+  b.style.transition = Math.random < .5 ? snow_fall_rate*.75 + 's' : snow_fall_rate + 's'
+  b.style.transitionTimingFunction = 'ease-in'
+  document.body.appendChild(b)
+
+  setTimeout(function(){
+    var flakes = document.querySelectorAll('.flake')
+    var flake = flakes[flakes.length - 1]  
+    var flake_loc = flake.getBoundingClientRect()
+    flake.style.top = '105%'
+    flake.style.left = Math.random() < .5 ? flake_loc.left - 150 + 'px' : flake_loc.left + 150 + 'px'
+  },10)  
+
+  var flakes = document.getElementsByClassName('flake')
+  for(var i=0;i<flakes.length;i++){
+    if(flakes[i].getBoundingClientRect().top > window.innerHeight) {
+      flakes[i].remove()
+    }      
+  }
+  setTimeout(function(){ snow() },200)
+}
+snow()
+  </script>
+
+</body>
+
+</html>
